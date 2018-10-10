@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		07874ACD2160733A0068B788 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07874ACC2160733A0068B788 /* AppDelegate.swift */; };
-		07874ACF2160733A0068B788 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07874ACE2160733A0068B788 /* ViewController.swift */; };
+		07874ACF2160733A0068B788 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07874ACE2160733A0068B788 /* HomeViewController.swift */; };
 		07874AD22160733A0068B788 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07874AD02160733A0068B788 /* Main.storyboard */; };
 		07874AD42160733C0068B788 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07874AD32160733C0068B788 /* Assets.xcassets */; };
 		07874AD72160733C0068B788 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07874AD52160733C0068B788 /* LaunchScreen.storyboard */; };
+		07874AE02160AE3B0068B788 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07874ADF2160AE3B0068B788 /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		07874AC92160733A0068B788 /* TwitterSlideOutMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterSlideOutMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07874ACC2160733A0068B788 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07874ACE2160733A0068B788 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		07874ACE2160733A0068B788 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		07874AD12160733A0068B788 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07874AD32160733C0068B788 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07874AD62160733C0068B788 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07874AD82160733C0068B788 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07874ADF2160AE3B0068B788 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		07874ACB2160733A0068B788 /* TwitterSlideOutMenu */ = {
 			isa = PBXGroup;
 			children = (
+				07874ADE2160ADEA0068B788 /* Controllers */,
 				07874ACC2160733A0068B788 /* AppDelegate.swift */,
-				07874ACE2160733A0068B788 /* ViewController.swift */,
 				07874AD02160733A0068B788 /* Main.storyboard */,
 				07874AD32160733C0068B788 /* Assets.xcassets */,
 				07874AD52160733C0068B788 /* LaunchScreen.storyboard */,
 				07874AD82160733C0068B788 /* Info.plist */,
 			);
 			path = TwitterSlideOutMenu;
+			sourceTree = "<group>";
+		};
+		07874ADE2160ADEA0068B788 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				07874ADF2160AE3B0068B788 /* MenuViewController.swift */,
+				07874ACE2160733A0068B788 /* HomeViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07874ACF2160733A0068B788 /* ViewController.swift in Sources */,
+				07874ACF2160733A0068B788 /* HomeViewController.swift in Sources */,
+				07874AE02160AE3B0068B788 /* MenuViewController.swift in Sources */,
 				07874ACD2160733A0068B788 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

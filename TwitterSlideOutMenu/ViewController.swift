@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UITableViewController {
+class HomeViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +17,11 @@ class ViewController: UITableViewController {
     }
 
     @objc func handleOpen() {
-        print("Opening Menu ...")
+        let vc = MenuViewController()
+        vc.view.frame = CGRect(x: 0, y: 0, width: 300, height: view.frame.height)
+
+        let mainWindow = UIApplication.shared.keyWindow
+        mainWindow?.addSubview(vc.view)
     }
 
     @objc func handleHide() {
